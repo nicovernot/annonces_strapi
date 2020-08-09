@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apps",
+  "info": {
+    "name": "App"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "menus": {
+      "via": "app",
+      "collection": "menu"
+    }
+  }
+}
